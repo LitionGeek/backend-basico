@@ -1,7 +1,7 @@
 const { response,request } = require('express')
 
 const usuariosGet = (req = request, res = response) => {
-    const {nombre='no name',edad} = req.query;
+    const {nombre='No name',edad="No edad"} = req.query;
   console.log("usuariosGet");
   res.json({
     ok: true,
